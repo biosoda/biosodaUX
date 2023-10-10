@@ -1,0 +1,30 @@
+{
+  "name": "biosodaux",
+  "version": "1.0.0",
+  "description": "Frontend BiosodaUX application",
+  "main": "js/main.js",
+  "directories": {
+    "doc": "doc",
+    "js": "js"
+  },
+  "scripts": {
+    "start": "node js/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anazhaw/Bio-SODA.git#master"
+  },
+  "keywords": [
+    "biosodaUX"
+  ],
+  "author": "Erich Zbinden",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/anazhaw/Bio-SODA/issues"
+  },
+  "homepage": "https://github.com/anazhaw/Bio-SODA/tree/master#readme",
+  "dependencies": {
+    "d3": "file:js/"
+  }
+}
