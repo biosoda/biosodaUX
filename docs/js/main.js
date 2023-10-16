@@ -438,10 +438,10 @@ function centerGraph() {
 
 function loadMaingraph() {
 	console.log('loadMaingraph');
-	// can be downloaded from here: biosoda.expasy.org:4481/soda/api/?q=main_graph
+	// can be downloaded from here: https://biosoda-api-demo.vital-it.ch/soda/api/?q=main_graph
 	$.ajax({
 		url: "main_graph.json", // local file is faster - data does not change a lot
-		// url: "https://biosoda.expasy.org:4481/soda/api/?q=main_graph",
+		// url: "https://biosoda-api-demo.vital-it.ch//soda/api/?q=main_graph",
 	}).done(function(data)
 	{
 		main_graph = data;
@@ -1309,10 +1309,7 @@ function submitQuery() {
 	overallobject.query = $('#pseudoinput .autosize').val();
 	
 	$.ajax({
-		// url: "http://localhost:3003/",
-		// url: "http://biosoda.expasy.org:3003/",
-		// url: "http://biosoda.cloudlab.zhaw.ch:8082/soda/api/",
-		url: "https://biosoda.expasy.org:4481/soda/api/", // CORS missing?
+		url: "https://biosoda-api-demo.vital-it.ch/soda/api/", // CORS missing?
 		data: {q: overallobject.query},
 		method: 'GET'
 		}).fail(function() {
@@ -1494,7 +1491,7 @@ function workOnData() {
 // finally download the CSV
 function loadFinalData() {
 	$.ajax({
-		url: "https://biosoda.expasy.org:4481/soda/api/",
+		url: "https://biosoda-api-demo.vital-it.ch/soda/api/",
 		data: JSON.stringify({
 			sparql_query: dataJSON.results[0].query,
 		}),
@@ -1551,7 +1548,7 @@ function loadTabledata() {
 	});
 	
 	$.ajax({
-		url: "https://biosoda.expasy.org:4481/soda/api/",
+		url: "https://biosoda-api-demo.vital-it.ch/soda/api/",
 		data: JSON.stringify({
 			q: overallobject.query,
 			concepts: chosenconcepts,
