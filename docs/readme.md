@@ -1,7 +1,7 @@
 ### BioSODA UX
 Web interface for NLP API using bootstrap, HTML5 boilerplate, jQuery, DataTables
 
-Note: this interface is no longer maintained online, but can be redeployed from the sources provided here.
+Note: this interface is no longer maintained online, but can be redeployed from the sources provided [here](https://github.com/biosoda/bioquery/tree/master/biosoda_frontend).
 
 ## How to cite this work
 
